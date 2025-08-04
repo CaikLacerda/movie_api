@@ -12,13 +12,8 @@ module Api
 			end
 
 			def create
-				movie = Movie.new(movie_params)
-
-				if movie.save
-					render json: movie, status: :created
-				else 
-					render json: { errors: movie.erorrs.full_messages }, status: :unprocessable_entity
-				end
+				movie = Movie.create!(movie_params)
+				render json: movie, status: :created
 			end
 
 			def update
@@ -26,8 +21,6 @@ module Api
 
 				if movie.update(movie_params)
 					render json: movie
-				else 
-					render json: { errors: movie.erorrs.full_messages }, status: :unprocessable_entity
 				end
 			end
 
