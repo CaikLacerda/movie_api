@@ -13,9 +13,9 @@ Body:
 }
 
 # 🔁 Etapas Futuras 
-Adicionar validações (ex: presença de nome e sinopse).
+✅ Adicionar validações (ex: presença de nome e sinopse).
 
-Implementar tratamento de erro com status HTTP corretos.
+✅ Implementar tratamento de erro com status HTTP corretos.
 
 Usar serializers (ex: ActiveModel::Serializer, fast_jsonapi).
 
