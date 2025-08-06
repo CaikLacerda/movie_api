@@ -1,3 +1,3 @@
 class Movie < ApplicationRecord
-  validates :name, :summary, :year_release, presence: true
+  validates :name, :summary, :release_year, :gender, presence: true
 end
