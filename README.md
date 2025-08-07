@@ -17,9 +17,9 @@ Body:
 
 ✅ Implementar tratamento de erro com status HTTP corretos.
 
-Usar serializers (ex: ActiveModel::Serializer, fast_jsonapi).
+✅ Usar serializers (ex: ActiveModel::Serializer, fast_jsonapi).
 
-Adicionar testes automatizados (com RSpec).
+✅ Adicionar testes automatizados (com RSpec).
 
 Autenticação simples via Token (JWT).
 
