@@ -1,6 +1,8 @@
 module Api
   module V1
     class Api::V1::MoviesController < ApplicationController
+			before_action :authenticate__request!
+
 			def index
 				movies = Movie.all
 				render json: movies

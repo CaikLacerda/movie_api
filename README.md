@@ -8,7 +8,7 @@ Body:
   "movie": {
       "name": "Interestelar",
       "summary": "Exploracao espacial e buracos de minhoca.",
-      "year_release": 2014
+      "release_year": 2014
   }
 }
 
@@ -21,7 +21,7 @@ Body:
 
 ✅ Adicionar testes automatizados (com RSpec).
 
-Autenticação simples via Token (JWT).
+✅ Autenticação simples via Token (JWT).
 
 Paginação com kaminari ou pagy.
 

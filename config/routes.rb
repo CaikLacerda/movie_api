@@ -4,4 +4,7 @@ Rails.application.routes.draw do
       resources :movies
     end
   end
+
+  post 'signup', to: 'auth#signup'
+  post 'login', to: 'auth#login'
 end
