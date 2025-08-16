@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
     render json: { error: exception.record.errors.full_messages}, status: :unprocessable_entity
   end
 
-  def authenticate__request!
+  def authenticate_request!
     header = request.headers['Authorization']
     token = header&.split(' ')&.last
     payload = JsonWebToken.decode(token)

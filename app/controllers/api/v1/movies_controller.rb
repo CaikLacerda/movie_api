@@ -1,10 +1,14 @@
 module Api
   module V1
     class Api::V1::MoviesController < ApplicationController
-			before_action :authenticate__request!
+			before_action :authenticate_request!
 
 			def index
-				movies = Movie.all
+				movies = if params[:q].present?
+					Movie.where("name ILIKE ?", "%#{params[:q]}%")
+				else
+					Movie.all
+				end
 				render json: movies
 			end
 

@@ -2,7 +2,7 @@
 
 API REST para filmes
 
-Request de cadastro: http://localhost:3000/api/v1/movies
+Request: http://localhost:3000/api/v1/movies
 Body: 
 {
   "movie": {
@@ -23,10 +23,10 @@ Body:
 
 ✅ Autenticação simples via Token (JWT).
 
-Paginação com kaminari ou pagy.
-
-Permitir buscar filmes por nome (com filtro no index)
+✅ Permitir buscar filmes por nome (com filtro no index)
 
 Adicionar relacionamento: Categoria ou Diretor
 
 Criar um front-end com Vue ou React consumindo essa API
+
+Paginação com kaminari ou pagy.
